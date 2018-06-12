@@ -5,27 +5,27 @@ The problem is how to predict whether the price of a given cryptocurrency will g
 given the historical price data.
 
 This can be treated both as a classification problem or a regression problem. I have chosen to treat it as a regression problem and then
-determine the up or down based on comparison.
+assgin the up or down labels based on comparison.
 
 There are several ways to tackle time-series forecasting problems within machine learning. I chose to solve it the following way. I will just mention the major details of my solution.
 
-#Time series prediction methodology
+## Time series prediction methodology
 Two commonly used methods to tackle time-series forecasting problems are using periodic windows and the other is shifting the features dataset ahead in time.e.g.
 
-time     feature1 feature2    target_variable
-t-3       45        23            76
-t-2       23        34            23
-t-1 	    34        56            57
-t         67        34            14
+                      time     feature1 feature2    target_variable
+                      t-3       45        23            76
+                      t-2       23        34            23
+                      t-1 	    34        56            57
+                      t         67        34            14
 
 now shifting feature space only for t+1 prediction
 
-time     feature1 feature2    target_variable
-t-3       NaN       NaN           Nan
-t-2       45        23            23
-t-1       23        34            57
-t   	    34        56            14
-t+1       67        34            NaN
+                      time     feature1 feature2    target_variable
+                      t-3       NaN       NaN           Nan
+                      t-2       45        23            23
+                      t-1       23        34            57
+                      t   	    34        56            14
+                      t+1       67        34            NaN
 
 Now we have the Values of Features or X to predict X(t+1)
 
@@ -40,6 +40,6 @@ It can be seen in the graphs that the prediction is offset by an amount of rough
 or scaling error. Apart from that the prediction graph is quite similar to the true values which works for this particular problem
 because we only have to predict if the price is going to go up to down. The offset does not influence that.
 
-Miscellaneous:
+## Miscellaneous:
 I have not followed the part 2 of the task because I have not worked with those tools. Although, I know about them and believe that
 they are not a big deal to learn to operate. But I just do not have time to do that at the moment.
