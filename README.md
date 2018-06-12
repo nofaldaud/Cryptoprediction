@@ -27,7 +27,7 @@ now shifting feature space only for t+1 prediction
                       t   	    34        56            14
                       t+1       67        34            NaN
 
-Now we have the Values of Features or X to predict X(t+1)
+Now we have the Values of Features or X to predict y(t+1)
 
 # Model selection
 I started from logistic regression and then iteratively increased the model complexity considering their corresponding 
