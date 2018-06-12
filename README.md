@@ -29,7 +29,7 @@ now shifting feature space only for t+1 prediction
 
 Now we have the Values of Features or X to predict y(t+1). I have followed this method.
 
-# Feature Engineering
+## Feature Engineering
 I have added a couple of statistical features to the original dataset to help increasing the accuracy of prediction.
 The sine and cosine functions of the hour values are added to denote the high and low hours during the day
 as business tends to do well during some particular hours and not so well during others.
@@ -39,13 +39,13 @@ during the hour and the difference of opening and closing price.
 
 Also the lagged closing prices are added as features.
 
-# Model selection
+## Model selection
 I started from logistic regression and then iteratively increased the model complexity considering their corresponding 
 accuracy. The state-of-the-art models used in the area of financial and stock market prediction (quite similar to this problem)
 are mostly Deep learning methods exploiting neural network. LSTMs are considered to do particularly well for time series predictions.
 However, I am not fluent with Neural networks yet, although I am working on it. So SVM was giving the best results in the models that I tried.
 
-# Results
+## Results
 It can be seen in the graphs that the prediction is offset by an amount of roughly $1000. Best guess, this is due to some normalization
 or scaling error. Apart from that the prediction graph is quite similar to the true values which works for this particular problem
 because we only have to predict if the price is going to go up to down. The offset does not influence that.
