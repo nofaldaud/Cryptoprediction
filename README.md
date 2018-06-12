@@ -27,7 +27,17 @@ now shifting feature space only for t+1 prediction
                       t   	    34        56            14
                       t+1       67        34            NaN
 
-Now we have the Values of Features or X to predict y(t+1)
+Now we have the Values of Features or X to predict y(t+1). I have followed this method.
+
+# Feature Engineering
+I have added a couple of statistical features to the original dataset to help increasing the accuracy of prediction.
+The sine and cosine functions of the hour values are added to denote the high and low hours during the day
+as business tends to do well during some particular hours and not so well during others.
+
+the rolling standard deviation of the closing price is also added as as feature as well as the average price 
+during the hour and the difference of opening and closing price.
+
+Also the lagged closing prices are added as features.
 
 # Model selection
 I started from logistic regression and then iteratively increased the model complexity considering their corresponding 
