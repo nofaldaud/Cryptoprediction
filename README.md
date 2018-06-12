@@ -48,8 +48,12 @@ However, I am not fluent with Neural networks yet, although I am working on it. 
 ## Results
 It can be seen in the graphs that the prediction is offset by an amount of roughly $1000. Best guess, this is due to some normalization
 or scaling error. Apart from that the prediction graph is quite similar to the true values which works for this particular problem
-because we only have to predict if the price is going to go up to down. The offset does not influence that.
+because we only have to predict if the price is going to go up to down. The offset does not affect that.
 
+## Next steps:
+1. try to debug for the scaling or normalization error which is causing the offset.
+2. Try to get more data.
+3. Try a more sophisticated model in neural networks.
 ## Miscellaneous:
 I have not followed the part 2 of the task because I have not worked with those tools. Although, I know about them and believe that
 they are not a big deal to learn to operate. But I just do not have time to do that at the moment.
