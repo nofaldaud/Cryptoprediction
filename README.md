@@ -42,7 +42,7 @@ Also the lagged closing prices are added as features.
 ## Model selection
 I started from logistic regression and then iteratively increased the model complexity considering their corresponding 
 accuracy. The state-of-the-art models used in the area of financial and stock market prediction (quite similar to this problem)
-are mostly Deep learning methods exploiting neural network. LSTMs are considered to do particularly well for time series predictions.
+are mostly Deep learning methods exploiting artificial neural networks. LSTMs are considered to do particularly well for time series predictions.
 However, I am not fluent with Neural networks yet, although I am working on it. So SVM was giving the best results in the models that I tried.
 
 ## Results
